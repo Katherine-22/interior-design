@@ -1,0 +1,164 @@
+.menu-btn {
+  position: absolute;
+  z-index: 1;
+  right: 1rem;
+  top: 2rem;
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+  @include transition-ease;
+
+  @media (min-width: $screen-md) {
+    visibility: hidden;
+  }
+
+  &__burger {
+    position: absolute;
+    right: 0;
+    top: 1rem;
+    width: 35px;
+    height: 3px;
+    background: $primary-color;
+    @include transition-ease;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -9px;
+      width: 35px;
+      height: 3px;
+      background: $primary-color;
+      @include transition-ease;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 9px;
+      width: 20px;
+      height: 3px;
+      background: $primary-color;
+      @include transition-ease;
+    }
+
+    &.open {
+      transform: rotate(180deg);
+      background: transparent;
+
+      &::before {
+        transform: rotate(45deg) translate(5px, 8px);
+        background: #fff;
+      }
+
+      &::after {
+        width: 35px;
+        transform: rotate(-45deg) translate(5px, -7px);
+        background: #fff;
+      }
+    }
+  }
+}
+
+.menu {
+  @media (min-width: $screen-md) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.menu-nav {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #272727;
+  visibility: hidden;
+
+  @media (min-width: $screen-md) {
+    position: static;
+    visibility: visible;
+    background-color: transparent;
+    width: auto;
+  }
+
+  &.open {
+    visibility: visible;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    height: 100vh;
+    overflow: hidden;
+
+    opacity: 0.92;
+    transform: translateX(-100%);
+    @include transition-ease;
+
+    &.open {
+      transform: translateX(0);
+    }
+
+    @media (min-width: $screen-md) {
+      transform: translateX(0);
+      height: auto;
+      flex-direction: row;
+      gap: 1.75rem;
+      justify-content: flex-start;
+    }
+
+    @media (min-width: $screen-xl) {
+      gap: 4.5rem;
+    }
+  }
+
+  &__link {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #fff;
+    &:hover {
+      color: $text-color-secondary;
+    }
+
+    @media (min-width: $screen-md) {
+      color: $primary-color;
+      text-transform: none;
+      font-weight: 500;
+      font-size: 1.25rem;
+    }
+  }
+}
+
+.signup__btn {
+  @include btn;
+  background-color: #fff;
+  color: $primary-color;
+
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  opacity: 0;
+  transition: transform 0.5s ease-in-out;
+
+  &.open {
+    opacity: 1;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &:active {
+    background-color: gray;
+  }
+
+  @media (min-width: $screen-md) {
+    position: static;
+    opacity: 1;
+    background-color: $primary-color;
+    color: #fff;
+  }
+}
