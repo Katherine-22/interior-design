@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header,
 section {
   margin-top: 4rem;
@@ -498,4 +499,249 @@ h3 {
 .footer .nav .contact-info {
   color: #d1d1d1;
   margin-bottom: 1rem;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  color: #1f1f1f;
+}
+
+.container {
+  max-width: 1700px;
+  margin-inline: auto;
+}
+
+p {
+  line-height: 1.75;
+}
+
+.logo {
+  width: 8.5rem;
+}
+
+footer {
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+.services__heading {
+  position: relative;
+}
+@media (min-width: 768px) {
+  .services__heading {
+    padding-left: 100px;
+  }
+  .services__heading::before {
+    content: "";
+    height: 2px;
+    width: 70px;
+    background-color: #1f1f1f;
+    position: absolute;
+    left: 0;
+    top: 50%;
+  }
+}
+
+.services__wrapper {
+  display: grid;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+@media (min-width: 768px) {
+  .services__wrapper {
+    grid-template-columns: 1fr;
+    margin-top: 3rem;
+  }
+}
+@media (min-width: 900px) {
+  .services__wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 5rem;
+  }
+}
+
+.service__item, .steps__item {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2rem;
+  justify-content: start;
+}
+
+.service__desc, .steps__desc {
+  font-size: 1rem;
+  color: #545454;
+  margin-top: 2rem;
+}
+@media (min-width: 768px) {
+  .service__desc, .steps__desc {
+    font-size: 1rem;
+  }
+}
+
+.design, .steps {
+  display: grid;
+  gap: 1rem;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .design, .steps {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+.design__content {
+  display: grid;
+  gap: 1.5rem;
+  font-size: 1.125rem;
+  color: #545454;
+}
+
+.accordion-item-header {
+  font-weight: 600;
+  color: #1f1f1f;
+  padding-block: 1rem;
+  border-bottom: 1px solid #d1d1d1;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  padding-right: 1rem;
+}
+
+.accordion-item-header::after {
+  content: "+";
+  font-size: 2rem;
+  position: absolute;
+  right: 0;
+}
+
+.accordion-item-header.active::after {
+  content: "−";
+}
+
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.accordion-item-body-content {
+  color: #545454;
+  padding: 1rem;
+}
+
+.learn-btn {
+  padding: 1rem 2.5rem;
+  background-color: #1f1f1f;
+  color: #fff;
+  font-size: 1.25rem;
+  cursor: pointer;
+  border: none;
+  align-self: end;
+  justify-self: center;
+}
+.learn-btn:active {
+  background-color: #808080;
+}
+@media (min-width: 768px) {
+  .learn-btn {
+    justify-self: start;
+  }
+}
+
+@media (min-width: 768px) {
+  .steps__img {
+    order: 2;
+  }
+}
+
+.steps__img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+.steps__options {
+  display: grid;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.subscription {
+  max-width: 700px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.subscription__desc {
+  font-size: 1.125rem;
+  color: #545454;
+  margin-top: 2rem;
+}
+
+.form-wrapper {
+  background-color: #fff;
+  width: 100%;
+  display: inline-flex;
+}
+
+.subscription__form {
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+  margin-top: 1rem;
+  background-color: #fff;
+  border-radius: 4px;
+}
+@media (min-width: 600px) {
+  .subscription__form {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-top: 4rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
+.subscription__btn {
+  padding: 1rem 2.5rem;
+  background-color: #1f1f1f;
+  color: #fff;
+  font-size: 1.25rem;
+  cursor: pointer;
+  border: none;
+}
+.subscription__btn:active {
+  background-color: #808080;
+}
+
+.input-group {
+  padding: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-grow: 1;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+@media (min-width: 600px) {
+  .input-group {
+    border: none;
+  }
+}
+
+.subscription__input {
+  color: #8c8c8c;
+  font-size: 1.25rem;
+  border: none;
+  outline: none;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
