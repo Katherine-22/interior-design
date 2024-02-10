@@ -12,7 +12,7 @@ section {
 @media (min-width: 900px) {
   header,
   section {
-    margin-top: 10rem;
+    margin-top: 7rem;
   }
 }
 
@@ -253,7 +253,7 @@ h3 {
   background-color: #fff;
   color: #1f1f1f;
   position: absolute;
-  bottom: 10%;
+  bottom: 8%;
   left: 0;
   opacity: 0;
   transition: transform 0.5s ease-in-out;
