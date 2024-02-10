@@ -441,4 +441,61 @@ h3 {
   .count__score {
     font-size: 4rem;
   }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    margin-top: -80px;
+  }
+}
+.footer__onboarding {
+  display: grid;
+  gap: 2rem;
+}
+.footer__onboarding .social-links {
+  display: flex;
+  gap: 1rem;
+}
+.footer__onboarding p {
+  width: 70%;
+  color: #d1d1d1;
+}
+.footer .nav {
+  display: grid;
+  gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  .footer .nav {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  .footer .nav {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.footer .nav__heading {
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+.footer .nav__list {
+  display: grid;
+  gap: 1rem;
+}
+.footer .nav__link {
+  color: #d1d1d1;
+}
+.footer .nav__link:hover {
+  color: #808080;
+}
+.footer .nav .contact-info {
+  color: #d1d1d1;
+  margin-bottom: 1rem;
 }/*# sourceMappingURL=main.css.map */

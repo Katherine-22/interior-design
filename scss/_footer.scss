@@ -1,0 +1,61 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 2rem;
+
+  @media (min-width: $screen-md) {
+    flex-direction: row;
+    margin-top: -80px;
+  }
+
+  &__onboarding {
+    display: grid;
+    gap: 2rem;
+
+    .social-links {
+      display: flex;
+      gap: 1rem;
+    }
+
+    p {
+      width: 70%;
+      color: $text-color-secondary;
+    }
+  }
+
+  .nav {
+    display: grid;
+    gap: 1.5rem;
+
+    @media (min-width: $screen-md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: $screen-lg) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__heading {
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    &__list {
+      display: grid;
+      gap: 1rem;
+    }
+
+    &__link {
+      color: $text-color-secondary;
+      &:hover {
+        color: #808080;
+      }
+    }
+
+    .contact-info {
+      color: $text-color-secondary;
+      margin-bottom: 1rem;
+    }
+  }
+}
