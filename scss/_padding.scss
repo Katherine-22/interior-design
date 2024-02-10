@@ -1,0 +1,33 @@
+// container paddings
+
+$padding-block-mobile: 2rem;
+$padding-inline-mobile: 1rem;
+
+$padding-block-tablet: 3rem;
+$padding-inline-tablet: 2rem;
+
+$padding-block-desktop: 3rem;
+$padding-inline-desktop: 5rem;
+
+$padding-block-footer-lg: 9rem;
+
+.container {
+  padding: $padding-block-mobile $padding-inline-mobile;
+  @media (min-width: $screen-md) {
+    padding: $padding-block-tablet $padding-inline-tablet;
+  }
+  @media (min-width: $screen-lg) {
+    padding: $padding-block-desktop $padding-inline-desktop;
+  }
+}
+.footer {
+  padding: $padding-block-mobile $padding-inline-mobile;
+
+  @media (min-width: $screen-md) {
+    padding: $padding-block-tablet $padding-inline-tablet;
+  }
+
+  @media (min-width: $screen-lg) {
+    padding: $padding-block-footer-lg $padding-inline-desktop;
+  }
+}

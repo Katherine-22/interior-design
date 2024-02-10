@@ -1,0 +1,42 @@
+$fs-h1-sm: 3rem;
+$fs-h1-md: 3rem;
+$fs-h1-lg: 4.5rem;
+
+$fs-h2-sm: 2rem;
+$fs-h2-md: 2.5rem;
+$fs-h2-lg: 3rem;
+
+$fs-h3-sm: 1.5rem;
+$fs-h3-lg: 1.5rem;
+
+h1 {
+  font-size: $fs-h1-sm;
+  @media (min-width: $screen-md) {
+    font-size: $fs-h1-md;
+  }
+  @media (min-width: $screen-lg) {
+    font-size: $fs-h1-lg;
+  }
+
+  font-weight: 600;
+}
+
+h2 {
+  font-size: $fs-h2-sm;
+  font-weight: 600;
+
+  @media (min-width: $screen-md) {
+    font-size: $fs-h2-md;
+  }
+  @media (min-width: $screen-lg) {
+    font-size: $fs-h2-lg;
+  }
+}
+
+h3 {
+  font-size: $fs-h3-sm;
+  font-weight: 600;
+  @media (min-width: $screen-lg) {
+    font-size: $fs-h3-lg;
+  }
+}
