@@ -45,3 +45,25 @@ accordionItemHeaders.forEach((header) => {
     }
   });
 });
+
+// swiper
+const swiper = new Swiper(".swiper", {
+  loop: true,
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    900: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  navigation: {
+    nextEl: ".button-next",
+    prevEl: ".button-prev",
+  },
+});

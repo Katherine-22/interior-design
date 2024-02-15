@@ -10,6 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
@@ -215,6 +221,80 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- Reviews -->
+      <section class="reviews">
+        <div class="reviews__bg">
+          <picture class="reviews__bg">
+            <source srcset="img/reviews.png" media="(min-width: 768px)" />
+            <img src="img/reviews-sm.png" alt="Livingroom design" />
+          </picture>
+        </div>
+
+        <h2 class="reviews__heading">What Our Customers Say About Us</h2>
+
+        <div class="reviews__navigation">
+          <button class="button-prev">
+            <img src="img/arrow-left.png" alt="previous reviews button" />
+          </button>
+          <button class="button-next">
+            <img src="img/arrow-right.png" alt="next reviews button" />
+          </button>
+        </div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <p class="client__feedback">
+                Working with your design team was an absolute pleasure. The
+                attention to detail and creativity exceeded my expectations.
+                Thank you for making my home beautiful!
+              </p>
+              <div class="client__info">
+                <img
+                  src="img/customer1.png"
+                  alt="client icon"
+                  class="client__img"
+                />
+                <p class="client__name">Sophie Carter</p>
+                <p class="client__location">New York, USA</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <p class="client__feedback">
+                Exceptional service! From the initial consultation to the final
+                reveal, your team demonstrated professionalism and a keen eye
+                for design. Highly recommend!
+              </p>
+              <div class="client__info">
+                <img
+                  src="img/customer2.png"
+                  alt="client icon"
+                  class="client__img"
+                />
+                <p class="client__name">James Bennett</p>
+                <p class="client__location">Toronto, Canada</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <p class="client__feedback">
+                Outstanding service! Beginning with the initial consultation and
+                extending through to the final reveal, your team showcased
+                unparalleled professionalism.
+              </p>
+              <div class="client__info">
+                <img
+                  src="img/customer3.jpg"
+                  alt="client icon"
+                  class="client__img"
+                />
+                <p class="client__name">Vera Mrax</p>
+                <p class="client__location">Forks, USA</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </section>
 
